@@ -1,0 +1,80 @@
+$primary: $primary-theme-color;
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+
+@import '~admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '~admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+@import '~admin-lte/dist/css/adminlte.min.css';
+
+@import '~react-toastify/scss/main';
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-header .navbar-nav .nav-item .nav-link {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.nav-link:hover {
+    background-color: #389db6;
+}
+.overflow-hidden {
+    overflow-x: hidden;
+}
+.nav-pills .nav-link.active {
+    background-color: #2e96ad !important;
+}
+.navbar-nav > .user-menu .user-image {
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-right: 0;
+    margin-left: -8px;
+}
+.modal {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.error-msg {
+    color: tomato;
+    font-weight: bold;
+}
+.btn-primary {
+    background: linear-gradient(to left, #457fca, #5691c8);
+    border: none;
+}
+.btn-danger {
+    background: linear-gradient(to left, #f00000, #dc281e);
+    border: none;
+}
+[disabled='true'] {
+    cursor: pointer !important;
+}
+.bg-primary {
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+//This below code snippet is for the data table print buttons to show properply
+.data-table-extensions > .data-table-extensions-action {
+    margin-top: -10px;
+}
+.aligned-center {
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+.modal-close-btn {
+    background-color: transparent;
+    border: none;
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Red+Hat+Mono:wght@300&display=swap');
+
+.font-verisys {
+    font-family: 'Red Hat Mono', monospace;
+}
+.select-form-control {
+    margin-bottom: -15px;
+}
+
+.cnic-images {
+    .cnic {
+        img {
+            width: 22rem;
+            height: 14rem;
+            object-fit: cover;
+        }
+    }
+}
+.cnic-images {
+    img {
+        width: 22rem;
+        height: 14rem;
+        object-fit: cover;
+    }
+}
+.nadra-verisys-image {
+    img {
+        width: 100%;
+    }
+}
+
+.user-mugshot {
+    width: 25rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.comparison-images {
+    width: 18rem;
+    height: 22rem;
+    object-fit: cover;
+}
+.card {
+    position: relative;
+    transition: all 0.5s ease-in;
+    .card__overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        visibility: none;
+        transition: 0.5s ease;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+    &:hover .card__overlay {
+        opacity: 1;
+    }
+}
+
+.overlay__text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button {
+    background-color: #f05328;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+.user-data-alert {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    z-index: 2;
+}
+input[type='date']:in-range::-webkit-datetime-edit-year-field,
+input[type='date']:in-range::-webkit-datetime-edit-month-field,
+input[type='date']:in-range::-webkit-datetime-edit-day-field,
+input[type='date']:in-range::-webkit-datetime-edit-text {
+    color: rgb(126, 126, 126);
+}
+div[role='row'] {
+    cursor: pointer;
+}
+.comparison-placeholders {
+    width: 18rem;
+    height: 22rem;
+    i {
+        font-size: 12rem;
+    }
+}

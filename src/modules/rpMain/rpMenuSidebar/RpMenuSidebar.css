@@ -1,0 +1,18 @@
+.Side {
+    position: fixed !important;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+.LogoImg {
+    border: solid white 1px;
+    box-shadow: none;
+    margin-right: 20px;
+    margin-left: 5px;
+    background-color: white;
+}
+.L {
+    color: white;
+}
+.RemoveHover:hover {
+    text-decoration: none;
+    color: white;
+}
