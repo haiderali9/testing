@@ -16,8 +16,6 @@ jobs:
         node-version: '13.10'
     - name: Install npm
       run: |
-        npm
         npm install
-        npm run build:dev
       env:
         CI: true
