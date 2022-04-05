@@ -19,4 +19,4 @@ jobs:
         npm install
         npm run build:dev
       env:
-        CI: true
+        CI: false
