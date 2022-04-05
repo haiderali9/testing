@@ -5,7 +5,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu:latest
-    container: 14.18-buster
+    container: node:latest
     
     strategy:
       matrix:
