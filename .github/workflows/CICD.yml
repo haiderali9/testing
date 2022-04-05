@@ -1,4 +1,4 @@
-name: build
+name: build meraid
 
 on:
   push:
