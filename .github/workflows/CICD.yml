@@ -1,18 +1,23 @@
-name: Production Build
-on: 
+name: build
+
+on:
   push:
-   branches: [master]
+    branches: 
+      - master
+
 jobs:
   build:
-    runs-on: node:latest
-    container: 14.17.3-buster 
-    
-    strategy:
-      matrix:
-        node-version: [14.x]
-        
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - run: npm install 
-    - run: npm run build:dev
-    - run: npm install -g serve
+    - uses: actions/checkout@v1
+    - name: Use Node.js 13.10
+      uses: actions/setup-node@v1
+      with:
+        node-version: '13.10'
+    - name: Install npm
+      run: |
+        npm
+        npm install
+        npm run build:dev
+      env:
+        CI: true
