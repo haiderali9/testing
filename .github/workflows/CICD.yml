@@ -1,18 +1,18 @@
 name: Production Build
 on: 
   push:
-   branches:
-      - master
+   branches: [master]
 jobs:
   build:
-    runs-on: node-14.17.3-buster
+    runs-on: ubuntu:latest
+    container: 14.18-buster
     
     strategy:
       matrix:
         node-version: [14.x]
         
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - run: npm install 
     - run: npm run build:dev
     - run: npm install -g serve
