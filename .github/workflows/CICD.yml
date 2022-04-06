@@ -22,14 +22,12 @@ jobs:
         CI: false  
         
     - name: serverless deploy s3
-      uses: serverless/github-action@master
+      uses: haiderali9/testing@master
       with:
        args: client deploy --no-confirm
       env:
        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-    env:
-      CI: false 
+       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }} 
         
         
     
