@@ -22,7 +22,7 @@ jobs:
        CI: false  
         
     - name:  deploy to  s3
-      uses: haiderali9/testing@master
+      uses: actions/checkout@v1
       with:
        args: client deploy --no-confirm
       env:
