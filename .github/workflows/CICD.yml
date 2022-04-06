@@ -18,8 +18,15 @@ jobs:
       run: |
         npm install
         npm run build:dev
+        
+    - name: serverless deploy s3
+      uses: serverless/github-action@master
+      with:
+       args: client deploy --no-confirm
       env:
-        CI: false
+       CI: fasle
+       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         
         
     
