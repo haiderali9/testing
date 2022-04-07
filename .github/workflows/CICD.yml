@@ -29,7 +29,7 @@ jobs:
           
           touch .env
           env=${{ secrets.ENV_CONTENT }}
-          echo "$env" > testing/.env
+          echo "$env" > .env
           
 
       - name: Build
