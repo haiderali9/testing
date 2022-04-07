@@ -22,6 +22,15 @@ jobs:
 
       - name: Install
         run: npm install
+        
+        
+      - name: Create .env file
+        run: |
+          
+          touch testing/.env
+          env=${{ secrets.ENV_CONTENT }}
+          echo "$env" > testing/.env
+          
 
       - name: Build
         run: npm run build:dev
