@@ -22,14 +22,6 @@ jobs:
 
       - name: Install
         run: npm install
-        
-        
-      - name: Create .env file
-        run: |
-          
-          touch .env
-          env=${{ secrets.ENV_CONTENT }}
-          echo "$env" > .env
           
       
       - name: Create .env.production.local file
