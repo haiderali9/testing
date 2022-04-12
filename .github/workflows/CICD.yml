@@ -33,11 +33,10 @@ jobs:
           
       
       - name: Create .env.production.local file
-        run: |
+        env:
+          ENV_CONTENT: ${{ secrets.ENV_CONTENT}}
+          ENV_CONTENT_PRODUCTION : ${{ secrets.ENV_CONTENT_PRODUCTION }}
           
-          touch .env.production.local
-          env1=${{ secrets.ENV_CONTENT_PRODUCTION }}
-          echo "$env1" > .env.production.local
           
 
       - name: Build
