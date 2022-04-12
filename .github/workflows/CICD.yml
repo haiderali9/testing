@@ -24,7 +24,7 @@ jobs:
         run: npm install
           
       
-      - name: env 
+      - name: env file
         env:
           ENV_CONTENT: ${{ secrets.ENV_CONTENT}}
           ENV_CONTENT_PRODUCTION : ${{ secrets.ENV_CONTENT_PRODUCTION }}
