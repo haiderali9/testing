@@ -7,7 +7,7 @@ const icons = {
     google: 'fab fa-google',
     googlePlus: 'fab fa-google-plus'
 };
-
+//comment
 const AppButton = ({
     children,
     isLoading,
